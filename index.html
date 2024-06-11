@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href=./Portfolio/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion_enlace" href="#presentacion">
+                <h2 class=" navegacion_titulo" > Informatorio </h2>    
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#presentacion">Inicio </a> 
+                </li>
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#sobre-mi">Sobre mi </a> 
+                </li>
+                <li class="enlaces_item">
+                    <a class="enlaces_enlace" href="#proyectos">Proyectos </a> 
+                </li>
+            </ul>
+        </nav>
+
+   </header>
+   <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo"> Soy desarrollador </h1>
+                <p class="presentacion__parrafo"> Soy un desarrollador y desarrollo desarrollaciones que los desarrolladores desarrollan. </p>    
+                <div class="presentacion__contenedor_botones">
+                <a href="#sobre-mi" class="boton" role="button">Sobre mi </a>
+                <a href="./assets/docs/CV.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV </a>
+                </div>
+            </div>
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mi</h2>
+            <div class="articulo__contenedor_descripciones">
+              <section class="seccion_descripcion">
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen"
+                    src="./assets/images/profile/profile2.jpeg"
+                    alt="foto trabajando"
+                    title="trabajando"
+                  />
+                </div>
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                    Mi historia
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Soy profesora de ingles, me inicie en el mundo de la 
+                    programacion porque tengo el sueño de crear una pagina 
+                    para que alumnos puedan aprender ingles de manera sencilla, 
+                    siguiendo los principios de la gamificacion. 
+               
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Empecé a hacer el informatorio desde la pandemia pero 
+                    nunca terminé la etapa 2.
+                 
+                    
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Hoy en dia quiero poder terminar la etapa 2 y hacer la especializacion,
+                    y trabajar en el mundo de la programación. 
+                   
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                    Ha dedicarle tiempo y mucho esfuerzo! 
+                  
+                  </p>
+                </div>
+              </section>
+              <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+                pero cambiaremos el orden de los elementos dejando la imagen al final -->
+              <section class="seccion_descripcion">
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                    Mis hobbies:
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Caminar, andar en bici, fitboxing.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    leer, cafe, mate, cocinar.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Fan del señor de los anillos, Harry Potter. Buenas comedias. 
+                  </p>
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                    src="./assets/images/proyectos/trabajando.jpg"
+                    alt="foto mientras me encontraba en una reunion de trabajo"
+                    title="en el trabajo"
+                  />
+                </div>
+              </section>
+            </div>
+          </article>
+          <!-- repaso article sobre mi y su estructura -->
+    
+          <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+          no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+          podran ir actualizando la informacion de esta seccion -->
+          <article class="articulo proyectos" id="proyectos">
+            <h2 class="articulo__titulo">Mis proyectos</h2>
+            <div class="contenedor_tarjetas_grid">
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/trabajo.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 1"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Preposiciones de Movimiento</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_1"
+                  >
+                    Enseñando ingles técnico. Preposiciones de movimiento.
+                  </p>
+                  <a href="#" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a>
+                </div>
+              </article>
+              <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+                Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/aprendiendo.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 2"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Animales</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_2"
+                  >
+                    Recordar vocabulario y como se escriben las palabras a traves de juegos.
+                  </p>
+                  <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/celebracion halloween.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 3"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Celebrando Halloween</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_3"
+                  >
+                    celebrando la cultura del idioma que estamos aprendiendo
+ 
+                  </p>
+                  <a href="#" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a
+                  >
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/partes d ela casa.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 4"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Partes de la Casa</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_4"
+                  >
+                    repasando vocabulario acerca de partes de la casa
+                   
+
+                  </p>
+                  <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/nacionalidades y paises.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 5"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_5">Paises y nacionalidades</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_5"
+                  >
+                    siempre buscando aprender a traves del juego
+                   
+                  </p>
+                  <a href="#" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a
+                  >
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/to be yes no questions.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 6"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_6"> Verbo to Be "Yes/ No questions"</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_6"
+                  >
+                    Enseñando el verbo to be del modo tradicional con la tabla de conjugación.
+
+                  </p>
+                  <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                </div>
+              </article>
+            </div>
+          </article>
+          <!-- repaso del articulo proyectos -->
+        </main>
+        <!-- repaso de todo lo incluido en la etiqueta main -->
+    
+        <!-- Por ultimo deben agregar la etiqueta footer. 
+          En esta aparecera nuestra informacion de contacto y 
+          también inluiremos enlaces de navegacion y derechos. -->
+        <footer class="pie_de_pagina" role="contentinfo">
+          <!-- explicacion: la primer columna sera para nuestras redes,
+            cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+            <ul class="enlaces enlaces_redes">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://github.com/yening14"
+                  target="_blank"
+                  ><img
+                    class="enlaces__icono"
+                    src="./assets/Images/logos/git hub.png"
+                    alt="logo de github"
+                    title="github"
+                /></a>
+              </li>
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://www.instagram.com/yeni_nad/"
+                  target="_blank"
+                >
+                  <img
+                    class="enlaces__icono"
+                    src="./assets/images/logos/instagram.jpg"
+                    alt="logo de instagram"
+                    title="instagram"
+                  />
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="mailto:yeningimenez@gmail.com"
+                  target="_blank"
+                  >Mail: yeningimenez@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+          <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="#presentacion"
+                  >Inicio</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- por ultimo los derechos de la pagina -->
+          <div class="pie_de_pagina__copyright">
+            <p>©️Copyright 2024</p>
+          </div>
+        </footer>
+        <!-- repaso de los elementos en el footer -->
+    </body>
+</html>
